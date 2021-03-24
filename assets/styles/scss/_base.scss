@@ -1,7 +1,7 @@
 @import './variables';
-:root {
-    font-size: 18px;
-}
+// :root {
+//     font-size: 18px;
+// }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +12,7 @@ p {
     margin: 1rem 0 0;
     color: $Very-dark-grayish-blue;
     line-height: 1.8;
+    letter-spacing: 0.03em;
 }
 a {
     text-decoration: none;

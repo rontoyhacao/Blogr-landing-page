@@ -1,21 +1,21 @@
 gsap.from('#illustration1', {
     scrollTrigger: '#content1',
     y: 200,
-    duration: 1.5,
+    duration: 1,
     opacity: 0,
     scrub: 1
 });
 gsap.from('#illustration2', {
     scrollTrigger: '#content2',
     y: 200,
-    duration: 1.5,
+    duration: 1,
     opacity: 0,
     scrub: 1
 });
 gsap.from('#illustration3', {
     scrollTrigger: '#content3',
     y: 200,
-    duration: 1.5,
+    duration: 1,
     opacity: 0,
     scrub: 1
 });
