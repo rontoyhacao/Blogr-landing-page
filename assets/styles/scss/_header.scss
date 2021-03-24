@@ -86,13 +86,15 @@
                     }
                 }
                 .toggle-nav {
-                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .3s;
                     @include container-width-mobile;
                     text-align: center;
                     background: $White;
                     border-radius: 0.27rem;
                     position: absolute;
-                    top: 6.66rem;
+                    top: 0;
                     padding: 0.55rem 1.11rem;
                     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
                     .toggle-nav_buttons-wrapper {
@@ -160,7 +162,9 @@
                     }
                 }
                 .show {
-                    display: initial;
+                    visibility: visible;
+                    opacity: 1;
+                    top: 6.66rem;
                 }
             }
             .hero-container {
