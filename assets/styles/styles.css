@@ -269,8 +269,8 @@ ul {
   background: #f0f0f0;
   border-radius: 0.27rem;
   padding: 1.11rem;
-  -webkit-transition: max-height .2s;
-  transition: max-height .2s;
+  -webkit-transition: max-height .6s;
+  transition: max-height .6s;
 }
 
 .header .header-wrapper .container .header-container .toggle-nav .toggle-nav_buttons-wrapper nav ul .button-links ul li a {
