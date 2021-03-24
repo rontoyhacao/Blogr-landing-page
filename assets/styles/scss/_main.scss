@@ -1,0 +1,65 @@
+@import './variables';
+@import './mixins';
+.main-content_features {
+    padding: 6rem 0 2.22rem;
+    h2 {
+        text-align: center;
+        color: $Very-dark-blue;
+        margin-bottom: 2rem;
+    }
+    ul li .container .feature-container .content {
+        @include container-width-mobile;
+        margin-top: 2rem;
+    }
+    .content--extra {
+        color: $White;
+        padding: 12.88rem 0 5.55rem;
+        margin-top: initial !important;
+        h3 {
+            font-size: 2.11rem;
+        }
+        p {
+            color: $White;
+        }
+    }
+    ul li:nth-of-type(2) {
+        .container img {
+            position: relative;
+            z-index: 9;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.feature-container {
+    text-align: center;
+    .content ul li {
+        margin-bottom: 3rem;
+        h3 {
+            font-size: 1.5rem;
+            color: $Very-dark-blue;
+            line-height: 1;
+        }
+    }
+}
+
+.feature-container--extra {
+    background: linear-gradient(180deg, $Very-dark-gray-blue 50%, $Very-dark-desaturated-blue);
+    position: relative;
+    margin: -11.88rem 0 3rem;
+    border-top-right-radius: 5.55rem;
+    border-bottom-left-radius: 5.55rem;
+    overflow: hidden;
+    .feature-container_circle {
+        background-image: url(/assets/images/bg-pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-position: center -250px;
+        background-size: 35rem;
+    }
+}

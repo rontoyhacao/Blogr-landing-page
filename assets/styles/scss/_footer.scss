@@ -1,0 +1,42 @@
+@import './variables';
+@import './mixins';
+.footer-wrapper {
+    background: $Very-dark-black-blue;
+    border-top-right-radius: 5.55rem;
+    text-align: center;
+    padding: 4.44rem 0 1.22rem;
+    .container {
+        @include container-width-mobile;
+        .column {
+            &:nth-of-type(1) {
+                img {
+                    margin-bottom: 3.33rem;
+                }
+            }
+            .links li a, h4 {
+                font-family: 'Ubuntu', sans-serif;
+                color: $White;
+            }
+            .links {
+                margin: 2.22rem 0;
+                li {
+                    margin-bottom: 0.66rem;
+                    a {
+                        color: $Grayish-blue;
+                    }
+                }
+            }
+        }
+    }
+    .attribution { 
+        font-size: 0.77rem; 
+        text-align: center; 
+        color: $White;
+        @include container-width-mobile;
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    }
+}
+
+
