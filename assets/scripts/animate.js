@@ -1,19 +1,19 @@
 gsap.from('#illustration1', {
-    scrollTrigger: '#illustration1',
+    scrollTrigger: '#content1',
     y: 200,
     duration: 1.5,
     opacity: 0,
     scrub: 1
 });
 gsap.from('#illustration2', {
-    scrollTrigger: '#illustration2',
+    scrollTrigger: '#content2',
     y: 200,
     duration: 1.5,
     opacity: 0,
     scrub: 1
 });
 gsap.from('#illustration3', {
-    scrollTrigger: '#illustration3',
+    scrollTrigger: '#content3',
     y: 200,
     duration: 1.5,
     opacity: 0,
