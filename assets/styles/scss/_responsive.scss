@@ -1,0 +1,130 @@
+@media screen and (min-width: 768px) {
+    .hero-container .hero-intro h1 {
+        font-size: 3rem;
+    }
+    .footer-wrapper {
+        text-align: initial;
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        background: linear-gradient(.25turn, $Very-light-red2, $Light-red2);
+        .header-wrapper {
+            background-size: initial;
+            background-position: center right 65%;
+            .container {
+                .header-container {
+                    padding: 4rem 0;
+                    .logo {
+                        margin-right: 2.5rem;
+                        img {
+                            height: initial;
+                        }
+                    }
+                    .left-nav nav {
+                        display: flex;
+                        .nav-links li {
+                            position: relative;
+                            padding: 0 1.5rem;
+                            .dropdown {
+                                padding: 0.5rem 0;
+                                &:hover {
+                                    .dropdown-button {
+                                        text-decoration: underline;
+                                        &::after {
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                    .dropdown-links {
+                                        visibility: visible;
+                                        opacity: 1;
+                                        top: 2.25rem;
+                                    }
+                                }
+                                .dropdown-button {
+                                    font-family: 'Ubuntu', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 1rem;
+                                    background: transparent;
+                                    border: none;
+                                    cursor: pointer;
+                                    color: $White;
+                                    &::after {
+                                        content: url(/assets/images/icon-arrow-light.svg);
+                                        padding: 0 0.38rem;
+                                        position: absolute;
+                                    }
+                                }
+                                .dropdown-links {
+                                    background: $White;
+                                    position: absolute;
+                                    padding: 1.25rem;
+                                    padding-right: 2.5rem;
+                                    border-radius: 0.27rem;
+                                    box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.5);
+                                    left: 0;
+                                    visibility: hidden;
+                                    top: 0;
+                                    opacity: 0;
+                                    transition: all .2s;
+                                    ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        li {
+                                            padding: 0.37rem 0;
+                                            a {
+                                                color: black;
+                                                font-family: 'Ubuntu', sans-serif;
+                                                padding: inherit;
+                                                &:hover {
+                                                    font-weight: 700;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right-nav {
+                        display: flex;
+                    }
+                }
+                .hero-container {
+                    padding: 3.75rem 0 9rem;
+                    .hero-intro {
+                        h1 {
+                            font-size: 4rem;
+                        }
+                        .hero-caption {
+                            font-size: 1.125rem;
+                            letter-spacing: 0.03em;
+                            color: $Grayish-blue2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .toggle {
+        display: none;
+    }
+    .toggle-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        background: linear-gradient(.25turn, $Very-light-red2, $Light-red2);
+        .header-wrapper {
+            background-size: initial;
+            background-position: center right 75%;
+        }
+    }
+}

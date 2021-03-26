@@ -23,6 +23,9 @@
                     margin-bottom: 0.66rem;
                     a {
                         color: $Grayish-blue;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
