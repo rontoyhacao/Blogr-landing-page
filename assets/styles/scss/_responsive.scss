@@ -64,7 +64,7 @@
                                     background: $White;
                                     position: absolute;
                                     padding: 1.25rem;
-                                    padding-right: 2.5rem;
+                                    min-width: 9rem;
                                     border-radius: 0.27rem;
                                     box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.5);
                                     left: 0;
@@ -81,6 +81,8 @@
                                                 color: black;
                                                 font-family: 'Ubuntu', sans-serif;
                                                 padding: inherit;
+                                                display: flex;
+                                                width: 100%;
                                                 &:hover {
                                                     font-weight: 700;
                                                 }
@@ -93,6 +95,29 @@
                     }
                     .right-nav {
                         display: flex;
+                        .button-nav {
+                            a {
+                                background: $White;
+                                font-family: 'Ubuntu', sans-serif;
+                                font-weight: 700;
+                                border-radius: 2.77rem;
+                                &:first-of-type {
+                                    background: transparent;
+                                    padding: 0 1.5rem;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    color: $Light-red;
+                                    padding: 1em 2.25em;
+                                    &:hover {
+                                        color: $White;
+                                        background: $Very-light-red;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .hero-container {
@@ -117,6 +142,97 @@
     .toggle-nav {
         display: none;
     }
+    .main-content {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .main-content_features {
+        padding: 9.88rem 0 14.88rem;
+        h2 {
+            font-size: 2.37rem;
+            margin-bottom: 6.38rem;
+        }
+        ul li .container .feature-container .content {
+            @include content-width-initial;
+        }
+        .content--extra {
+            padding: 8rem 0 4.25rem 6rem;
+        }
+        .feature-container {
+            display: flex;
+            .content ul li {
+                margin-bottom: 5.5rem;
+            }
+            .illustration-container {
+                width: 45% !important;
+            }
+            .content {
+                width: 60% !important;
+                text-align: initial;
+                ul li h3 {
+                    font-size: 1.75rem;
+                }
+            }
+            .content--padding-right {
+                padding-right: 6rem;
+            }
+            .content--padding-left {
+                padding: 11.5rem 0 0 6rem;
+            }
+        }
+        .feature-container--reverse {
+            flex-direction: row-reverse;
+        }
+        .feature-container--extra {
+            margin: 10.38rem 0 7.5rem;
+            position: initial;
+            background: url(/assets/images/bg-pattern-circles.svg), linear-gradient(45deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue 80%);
+            background-repeat: no-repeat;
+            background-position: -50% 90%;
+            .feature-container_circle {
+                display: flex;
+                background: initial;
+                // background-size: initial;
+                // background-position: left -70% bottom 20%;
+                .illustration-container--marginTop {
+                    margin-top: -4.25rem;
+                    .illustration2-desktop {
+                        display: block;
+                        position: absolute;
+                        transform: translateX(-105%);
+                    }
+                }
+            }
+        }
+        .feature-container--relative {
+            position: relative;
+        }
+    }
+
+    
+    .container--width {
+        &:first-of-type {
+            @include container-width-mobile;
+        }
+    }
+    .illustration-mobile {
+        display: none;
+    }
+    .illustration-desktop {
+        display: block;
+        position: absolute;
+        top: 4.25rem;
+    }
+    .illustration2-mobile {
+        display: none;
+    }
+    .illustration-desktop--absolute {
+        top: 0;
+        transform: translateX(-45%);
+    }
+    p {
+        margin: 1.5rem 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -124,7 +240,7 @@
         background: linear-gradient(.25turn, $Very-light-red2, $Light-red2);
         .header-wrapper {
             background-size: initial;
-            background-position: center right 75%;
+            background-position: right 75% bottom 48%;
         }
     }
 }

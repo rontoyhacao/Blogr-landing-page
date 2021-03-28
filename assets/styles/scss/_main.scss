@@ -37,6 +37,10 @@ img {
     max-width: 100%;
 }
 
+.illustration-desktop {
+    display: none;
+}
+
 .feature-container {
     text-align: center;
     .content ul li {
@@ -61,5 +65,8 @@ img {
         background-repeat: no-repeat;
         background-position: center -250px;
         background-size: 35rem;
+        img {
+            display: none;
+        }
     }
 }
